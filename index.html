@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Aventura no Mundo Antigo</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="img/cenario-passo0.png" alt="Cena inicial">
+            <p>Certa manhã, enquanto explorava o sótão de minha avó, encontrei um diário antigo que falava sobre civilizações perdidas e tesouros esquecidos. Decidi seguir as pistas que ele continha!</p>
+            <button class="btn-proximo" data-proximo="1">Antiga Grécia</button>
+            <button class="btn-proximo" data-proximo="2">Egito Antigo</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <p>Sua jornada começa na Grécia Antiga, onde você visita o Partenon em busca da primeira pista.</p>
+            <button class="btn-proximo" data-proximo="3">Buscar a pista no templo</button>
+            <button class="btn-proximo" data-proximo="4">Desistir e voltar para casa</button>
+        </div>
+        <div class="passo" id="passo-2">
+            <p>No Egito, você explora as pirâmides de Gizé. O diário menciona que a próxima pista pode ser encontrada em um dos monumentos. Por qual você começará?</p>
+            <button class="btn-proximo" data-proximo="5">Investigar a Grande Pirâmide</button>
+            <button class="btn-proximo" data-proximo="6">Explorar a Esfinge</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <p>No interior do Partenon, você encontra uma inscrição que indica que a próxima pista está nas florestas da Amazônia.</p>
+            <button class="btn-proximo" data-proximo="7">Viajar para a Amazônia</button>
+        </div>
+
+        <div class="passo" id="passo-4">
+            <img src="img/cenario-passo4-voltar-casa.png" alt="Imagem de desistência da aventura">
+            <p>Você decide que a aventura é muito arriscada e volta para casa, sempre se perguntando o que poderia ter descoberto.</p>
+        </div>
+
+        <div class="passo" id="passo-5">
+            <p>Dentro da Grande Pirâmide, você encontra um mapa escondido que revela que a próxima pista está na Amazônia.</p>
+            <button class="btn-proximo" data-proximo="7">Partir para a Amazônia</button>
+        </div>
+
+        <div class="passo" id="passo-6">
+            <p>Explorando a Esfinge, você encontra uma passagem secreta que leva a um labirinto sem saída.</p>
+            <button class="btn-proximo" data-proximo="8">Retornar e investigar a Grande Pirâmide</button>
+        </div>
+
+        <div class="passo" id="passo-7">
+            <p>Na Amazônia, sua busca se intensifica ao se deparar com um rio que se bifurca.</p>
+            <button class="btn-proximo" data-proximo="9">Seguir pelo rio à esquerda</button>
+            <button class="btn-proximo" data-proximo="10">Seguir pelo rio à direita</button>
+        </div>
+
+        <div class="passo" id="passo-8">
+            <p>De volta à Grande Pirâmide, você finalmente encontra o mapa. Agora, rumo à Amazônia!</p>
+            <button class="btn-proximo" data-proximo="7">Viajar para a Amazônia</button>
+        </div>
+
+        <div class="passo" id="passo-9">
+            <p>O rio à esquerda leva você a uma antiga ruína coberta de vegetação, onde inscrições revelam o caminho para a civilização perdida.</p>
+            <button class="btn-proximo" data-proximo="11">Explorar a civilização perdida</button>
+        </div>
+
+        <div class="passo" id="passo-10">
+            <p>O rio à direita termina em uma área pantanosa. Apesar da beleza, não há vestígios da civilização perdida aqui.</p>
+            <button class="btn-proximo" data-proximo="12">Retornar e tentar o outro rio</button>
+        </div>
+
+        <div class="passo" id="passo-11">
+            <img src="img/cenario-passo11-civilizacao-perdida.png" alt="Descobrindo uma civilização perdida">
+            <p>Dentro da civilização perdida, você descobre riquezas e segredos antigos, decidindo se dedicar a preservá-los para futuras gerações.</p>
+        </div>
+
+        <div class="passo" id="passo-12">
+            <p>Retornando e optando pelo rio à esquerda, você finalmente encontra a antiga ruína e as inscrições que levam à civilização perdida.</p>
+            <button class="btn-proximo" data-proximo="11">Explorar a civilização perdida</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
